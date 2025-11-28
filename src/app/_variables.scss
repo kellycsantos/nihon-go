@@ -4,5 +4,17 @@
     $palegray: #F9FAFB;
     $gray: #101828;
     $white: #ffffff;
-    
-    
+
+
+
+    @mixin box-shadow {
+        box-shadow: rgba(110, 108, 108, 0.298) 3px 4px 15px;
+
+        &:hover {
+            box-shadow: rgba(74, 73, 73, 0.388) 4px 10px 18px;
+        }
+    }
+
+    @mixin border-radius {
+        border-radius: 12px;
+    }

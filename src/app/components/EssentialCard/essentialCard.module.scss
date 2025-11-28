@@ -11,7 +11,11 @@
     justify-content: center;
     *{
         margin-bottom: 8px
-        
+    }
+
+    img{
+        height: 48px;
+        width: 48px;
     }
 
     @include variables.box-shadow;
