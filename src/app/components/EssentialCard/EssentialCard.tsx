@@ -13,9 +13,9 @@ type EssentialCard = {
 export const EssentialCard = ({icon, title, description}: EssentialCard) => {
     return (
         <div className={styles.card}>
-            <Image src={trainIcon} alt="" />
-            <h3>JR Pass</h3>
-            <p>Get unlimited train travel with the Japan Rail Pass for convenient and economical transportation.</p>
+            <Image src={icon} alt={title} />
+            <h3>{title}</h3>
+            <p>{description}</p>
         </div>
     )
 }
