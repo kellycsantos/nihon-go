@@ -1,0 +1,49 @@
+@use '../../variables';
+
+.experiencesCard {
+    @include variables.border-radius;
+    @include variables.box-shadow;
+
+    width: 290px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: .8s;
+        object-fit: cover;
+        filter: brightness(95%);
+
+    }
+
+    .info {
+        position: absolute;
+        color: white;
+        bottom: 0px;
+        padding: 24px;
+        background-image: linear-gradient(to bottom, rgba(79, 79, 79, 0),
+                rgba(13, 13, 13, 0.241),
+                rgba(16, 16, 16, 0.536),
+                rgba(16, 16, 16, 0.786));
+
+        h3 {
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+    }
+
+}
