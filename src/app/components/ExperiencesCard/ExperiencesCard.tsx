@@ -8,7 +8,7 @@ type ExperiencesCardProps = {
     description: string,
 }
 
-export const ExpiriencesCard = ({ img, title, description }: ExperiencesCardProps) => {
+export const ExperiencesCard = ({ img, title, description }: ExperiencesCardProps) => {
     return (
         <div className={styles.experiencesCard}>
             <Image src={img} alt={title} />
