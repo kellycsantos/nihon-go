@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.scss";
+import { Menu } from "./components";
 
 const fontPoppins = Poppins({
   variable: "--font-poppins",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontPoppins.variable}`}>
+        <Menu/>
         {children}
       </body>
     </html>
