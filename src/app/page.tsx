@@ -1,5 +1,4 @@
 import styles from './page.module.scss'
-import { Banner, PopularDestinations } from './components';
 import { Banner, PopularDestinations, UnforgettableExperiences, Tips} from './components';
 
 export default function Home() {
@@ -7,6 +6,7 @@ export default function Home() {
     <div className={styles.page}>
      <Banner/>
      <PopularDestinations/>
+     <UnforgettableExperiences/>
      <UnforgettableExperiences/>
      <Tips/>
     </div>

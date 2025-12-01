@@ -1,0 +1,12 @@
+@use '../../../variables';
+
+.tips{
+    @include variables.section-layout;
+    .essential_cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
