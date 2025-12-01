@@ -1,0 +1,13 @@
+@use '../../../variables';
+
+.destinations_container{
+  @include variables.section-layout;
+
+  .destinations_cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+}
