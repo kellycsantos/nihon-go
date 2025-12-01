@@ -1,5 +1,4 @@
 .card {
-    margin-left: 50px;
     border-radius: 12px;
     overflow: hidden;
     width: 330px;
@@ -38,6 +37,10 @@
             display: flex;
             align-items: center;
             gap: 8px;
+
+            h3{
+                font-weight: 600;
+            }
         }
 
         .tags {
