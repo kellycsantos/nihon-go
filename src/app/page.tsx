@@ -7,7 +7,6 @@ export default function Home() {
      <Banner/>
      <PopularDestinations/>
      <UnforgettableExperiences/>
-     <UnforgettableExperiences/>
      <Tips/>
     </div>
   );
