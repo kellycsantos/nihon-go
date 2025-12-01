@@ -18,3 +18,17 @@
     @mixin border-radius {
         border-radius: 12px;
     }
+
+    @mixin section-layout{
+        padding: 54px 20px; 
+        h2, h3{
+            text-align: center;
+        }
+        h2{
+            font-weight: 600;
+        }
+        h3{
+            margin-block: 10px;
+            font-weight: 300;
+        }
+    }
