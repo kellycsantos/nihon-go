@@ -1,0 +1,33 @@
+@use '../../variables';
+
+.button {
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: linear .4s;
+
+    &.full_width {
+        width: 100%;
+    }
+
+    &.primary {
+        background: variables.$primary;
+        color: #ffffff;
+
+        &:hover {
+            background: rgba(variables.$primary, .8);
+        }
+    }
+
+    &.ghost {
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid variables.$white;
+        color: #ffffff;
+
+        &:hover {
+            background: rgba(255, 255, 255, .5);
+        }
+    }
+
+
+}

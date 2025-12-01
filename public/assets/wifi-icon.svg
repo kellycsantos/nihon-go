@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48"
+     xmlns="http://www.w3.org/2000/svg">
+  <!-- fundo arredondado -->
+  <rect x="0" y="0" width="48" height="48" rx="12" fill="#FEE2E2"/>
+
+  <!-- sinal de wifi -->
+  <g stroke="#EF4444" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M14 20c5-5 15-5 20 0"/>
+    <path d="M18 26c3-3 9-3 12 0"/>
+    <circle cx="24" cy="32" r="2" fill="#EF4444" stroke="none"/>
+  </g>
+</svg>

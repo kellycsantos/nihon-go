@@ -1,0 +1,84 @@
+@use '../../../variables';
+
+.navbar {
+    display: flex;
+    height: 12dvh;
+    padding: 0 20px;
+    background: variables.$palegray;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            width: max-content;
+            color: variables.$gray;
+            &:hover{
+                color: variables.$dark-red;
+            }
+        }
+
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 12dvh;
+        width: 100%;
+        padding: 20px;
+        background: variables.$palegray;
+
+        &.show_menu {
+            display: block;
+        }
+
+        li a {
+            display: inline-block;
+            color: variables.$gray;
+            margin-bottom: 15px;
+        }
+    }
+
+    .menu_icon {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background: url('../../../../../public/icons/open_menu.png') no-repeat center center;
+        background-size: contain;
+
+        &.opened_menu{
+            background: url('../../../../../public/icons/close_menu.png') no-repeat center center;
+            background-size: contain;
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        ul {
+            display: flex;
+            position: static;
+            justify-content: flex-end;
+            align-items: center;
+
+            li a {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+
+            &.show_menu {
+                display: block;
+            }
+        }
+
+        .menu_icon {
+            display: none;
+        }
+    }
+
+}
