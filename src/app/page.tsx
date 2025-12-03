@@ -1,5 +1,5 @@
 import styles from './page.module.scss'
-import { Banner, PopularDestinations, UnforgettableExperiences, Tips} from './components';
+import { Banner, PopularDestinations, UnforgettableExperiences, Tips, Footer} from './components';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
      <PopularDestinations/>
      <UnforgettableExperiences/>
      <Tips/>
+     <Footer/>
     </div>
   );
 }
